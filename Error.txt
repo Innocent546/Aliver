@@ -1,0 +1,26 @@
+Application is running
+Traceback (most recent call last):
+  File "E:\Python\Application aliver\aliver.py", line 70, in <module>
+    restartApp()
+  File "E:\Python\Application aliver\aliver.py", line 61, in restartApp
+    restartApp()
+  File "E:\Python\Application aliver\aliver.py", line 61, in restartApp
+    restartApp()
+  File "E:\Python\Application aliver\aliver.py", line 61, in restartApp
+    restartApp()
+  [Previous line repeated 984 more times]
+  File "E:\Python\Application aliver\aliver.py", line 52, in restartApp
+    if (not (process_exists(applicationName))):
+  File "E:\Python\Application aliver\aliver.py", line 44, in process_exists
+    output = subprocess.check_output(call).decode()
+  File "C:\Users\Rashmitha\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 424, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+  File "C:\Users\Rashmitha\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 505, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "C:\Users\Rashmitha\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 951, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\Rashmitha\AppData\Local\Programs\Python\Python39\lib\subprocess.py", line 1354, in _execute_child
+    elif isinstance(args, os.PathLike):
+  File "C:\Users\Rashmitha\AppData\Local\Programs\Python\Python39\lib\abc.py", line 98, in __instancecheck__
+    return _abc_instancecheck(cls, instance)
+RecursionError: maximum recursion depth exceeded in comparison
